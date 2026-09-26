@@ -1,0 +1,295 @@
+/* BASIC */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef4ed;
+    color: #344638;
+    padding: 30px 20px;
+}
+
+.container,
+.edit-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1,
+h2 {
+    color: #3d5a43;
+}
+
+.header p,
+.edit-header p {
+    color: #718074;
+    margin-top: 5px;
+}
+
+.date-box {
+    background: #dce8d9;
+    color: #49634d;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    border: 1px solid #d5dfd3;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* FORMS */
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.form-row > * {
+    flex: 1;
+}
+
+input,
+select {
+    width: 100%;
+    height: 42px;
+    padding: 0 10px;
+    border: 1px solid #cbd8c9;
+    border-radius: 8px;
+    background: white;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #58705c;
+}
+
+button {
+    height: 42px;
+    padding: 0 18px;
+    border: none;
+    border-radius: 8px;
+    background: #64866a;
+    color: white;
+    cursor: pointer;
+}
+
+/* CONTENT */
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section-header span {
+    background: #e3ede1;
+    color: #58705c;
+    padding: 6px 10px;
+    border-radius: 15px;
+}
+
+/* TASK */
+.task {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border: 1px solid #e0e7df;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.check {
+    font-size: 22px;
+    color: #64866a;
+}
+
+.task-info {
+    flex: 1;
+}
+
+.task-info h3 {
+    color: #344638;
+    margin-bottom: 4px;
+}
+
+.task-info p,
+.task-info small {
+    color: #7b887c;
+}
+
+.completed-text {
+    text-decoration: line-through;
+    color: #999 !important;
+}
+
+/* STATUS */
+.status {
+    padding: 6px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+}
+
+.pending {
+    background: #fff0c9;
+    color: #967027;
+}
+
+.ongoing {
+    background: #e0e5f5;
+    color: #596b9b;
+}
+
+.completed {
+    background: #dcebd9;
+    color: #47734d;
+}
+
+/* ACTIONS */
+.actions {
+    display: flex;
+    gap: 5px;
+}
+
+.actions a,
+.actions button {
+    padding: 7px 10px;
+    height: auto;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.edit {
+    background: #e4eee1;
+    color: #4f6d53;
+    border-radius: 6px;
+}
+
+.delete {
+    background: #f5dddd;
+    color: #a04c4c;
+}
+
+/* DONE TASKS */
+.done-card {
+    text-align: center;
+}
+
+.done-number {
+    font-size: 45px;
+    font-weight: bold;
+    color: #64866a;
+    margin: 15px 0 5px;
+}
+
+.done-card > p {
+    color: #7b887c;
+}
+
+.done-task {
+    text-align: left;
+    background: #eef5ec;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    color: #49634d;
+}
+
+.empty {
+    text-align: center;
+    padding: 25px;
+    color: #879287;
+}
+
+/* EDIT PAGE */
+.edit-container {
+    max-width: 650px;
+}
+
+.edit-header {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.back {
+    color: #64866a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+
+    .header,
+    .form-row,
+    .content {
+        flex-direction: column;
+    }
+
+    .header {
+        align-items: flex-start;
+    }
+
+    .date-box {
+        width: 100%;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .task {
+        flex-wrap: wrap;
+    }
+
+    .status,
+    .actions {
+        margin-left: 34px;
+    }
+
+    .button-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .back,
+    .button-row button {
+        width: 100%;
+        text-align: center;
+    }
+}
