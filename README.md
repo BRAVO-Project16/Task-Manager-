@@ -7,7 +7,7 @@ Project Information
 Project Code: WST21-PM-2026-SF
 Student Name: Eddieon V Bravo
 Course & Year: BSIT 2nd Year
-Database: MySQL
+Database: SQLite 
 
 Features
 
