@@ -17,3 +17,9 @@ Project Information
 -√ Delete Task 
 -√ Update status
 
+
+README.md
+images/
+  UI.png
+  ![Task Manager UI](UI.png)
+
